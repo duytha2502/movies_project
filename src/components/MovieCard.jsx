@@ -1,4 +1,4 @@
-const MovieCard = ({
+function MovieCard({
     movie: {
         title,
         vote_average,
@@ -6,7 +6,7 @@ const MovieCard = ({
         release_date,
         original_language,
     },
-}) => {
+}) {
     return (
         <div className='movie-card'>
             <img
@@ -38,6 +38,6 @@ const MovieCard = ({
             </div>
         </div>
     );
-};
+}
 
 export default MovieCard;
